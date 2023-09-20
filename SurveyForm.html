@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">SURVEY</h1>
+    <p id="description">Complete our Career Interest Survey to help you find the career best suited for you, based on your personal profile. This will help us evaluate your opportunities and give you an informative report.</p>
+    <form id = "survey-form">
+      <fieldset><label id="name-label">Name: <input class="information" id="name" type="text" placeholder="Enter your first and last name" required></input></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required></input></label>
+      <label id="number-label">Age: <input id="number" type="number" min="12" max="100" placeholder="Enter your age"></input></label>
+        <label >Gender:</label>
+        <label for="male"><input type="radio" name="gender" class="inline" value="male">Male</label>
+        <label for="female"><input type="radio" name="gender" class="inline" value="female"/>Female</label>
+        <label for="other"><input type="radio" name="gender" class="inline" value="other">Other</label>
+        <label for="undisclosed"><input type="radio" name="gender" class="inline" value="undisclosed">Would rather not disclose</label>
+      </fieldset>
+      <fieldset>
+      <label>What is your current career? Are you satisfied in this career?<textarea id="current-career"></textarea></label>
+      <label> What are your career goals as of now?<textarea id="career-goals"></textarea></label>
+      <label> Which of the following fields are you interested in?</label>
+      <label for="software-engineering"><input type="checkbox"class="inline" value="software-engineering">Software Engineering</input></label>
+      <label for="finance"><input type="checkbox" class="inline" value="finance">Finance</input></label>
+      <label for="law"><input type="checkbox" class="inline" value="law">Law</input></label>
+      <label for="marketing"><input type="checkbox" class="inline" value="marketing">Marketing</input></label>
+      <label for="business"><input type="checkbox" class="inline" value="business">Business</input></label>
+      <label for="psychology"><input type="checkbox" class="inline" value="psychology">Psychology</input></label>
+      <label for="agriculture"><input type="checkbox" class="inline" value="agriculture">Agriculture</input></label>
+      <label for="other"><input type="checkbox" class="inline" value="other">Other</input></label>
+
+      <label>If you chose other, please specify below:<input type="text" ></label>
+      <label>What are your motivating factors when choosing a career?<select id="dropdown">
+        <option>Growth and development</option>
+        <option>Mentorship</option>
+        <option>Work-life balance</option>
+        <option>Money/compensation package</option>
+        <option>Travel</option></select></label>
+        </fieldset>
+
+
+      <input type="submit" id="submit">
+    </form>
+  </body>
