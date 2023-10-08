@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Technical documentation</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="Beginner's guide to Python">
+        <header>Beginner's guide to Python</header>
+
+          <p>New to programming? Python is free and easy to learn if you know where to start! This guide will help you to get started quickly.</p>
+          <h2>Introduction to Python</h2>
+
+        <p>Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.<br>
+
+Some of Python's notable features:<br>
+<ul>
+  <li>Uses an elegant syntax, making the programs you write easier to read.</li>
+<li>Is an easy-to-use language that makes it simple to get your program working. This makes Python ideal for prototype development and other ad-hoc programming tasks, without compromising maintainability.</li>
+<li>Comes with a large standard library that supports many common programming tasks such as connecting to web servers, searching text with regular expressions, reading and modifying files.</li>
+<li>Python's interactive mode makes it easy to test short snippets of code. There's also a bundled development environment called IDLE.</li>
+<li>Is easily extended by adding new modules implemented in a compiled language such as C or C++.</li>
+<li>Can also be embedded into an application to provide a programmable interface.</li>
+<li>Is free software in two senses. It doesn't cost anything to download or use Python, or to include it in your application. Python can also be freely modified and re-distributed because while the language is copyrighted it's available under an open-source license.</li></ul></p>
+<h2>Getting started with Python</h2>
+<p>To get started, install the Python 3 interpreter on your computer. This is the program that reads Python programs and carries out their instructions; you need it before you can do any Python programming.
+Mac and Linux distributions may include an outdated version of Python (Python 2), but you should install an updated one (Python 3). See <a href="https://wiki.python.org/moin/BeginnersGuide/Download">BeginnersGuide/Download</a> for instructions to download the correct version of Python.
+
+There are also Python interpreter and IDE bundles available, such as <a href="https://www.jetbrains.com/help/pycharm/installation-guide.html">PyCharm</a>. Other options can be found at <a href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">IntegratedDevelopmentEnvironments.</a></p>
+
+      </section>
+
+      <section class="main-section" id="Hello_World">
+        <header>
+          Hello World</header>
+          <p>To begin, let's do the most popular Hello World tradition:</p>
+          <code><pre># Python code for "Hello World"
+# nothing else to type...see how simple is the syntax.
+
+print("Hello World")</pre></code>
+
+        <h2>Variables</h2>
+        <p>In other programming languages like C, C++, and Java, you will need to declare the type of variables but in Python you don’t need to do that. Just type in the variable and when values will be given to it, then it will automatically know whether the value given would be an int, float, or char or even a String.<br>In Python 3, variables are created by assigning a value to a name. For example, x = 5 creates a variable called x and assigns the value 5 to it.</p>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instances (object) of these classes. The following are the standard or built-in data types in Python:
+<ul>
+<li>Numeric</li>
+<ul><li>Integer</li>
+<li>Floating point number</li>
+<li>Complex numbers</li></ul>
+<li>Sequence Type</li>
+<li>Boolean</li>
+<li>Set</li>
+<li>Dictionary</li>
+<li>Binary Types</li></ul></p>
+      </section>
+      <section class="main-section" id="Control_Flow_Statements">
+        <header>Control Flow Statements</header>
+
+      <p>Decision-making statements in programming languages decide the direction(Control Flow) of the flow of program execution. Types of Control Flow in Python
+In Python programming language, the type of control flow statements is as follows:</p>
+      <h3>if statements</h3>
+<p>The if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not.</p><br>
+Syntax:
+<code>if condition:<br>
+   # Statements to execute if<br>
+   # condition is true<br></code>
+<p>Here, the condition after evaluation will be either true or false. if the statement accepts boolean values – if the value is true then it will execute the block of statements below it otherwise not.</p>
+<code><pre># python program to illustrate If statement
+
+i = 10
+
+if (i > 15):
+    print("10 is less than 15")
+print("I am Not in if")</pre></code>
+      <h3>for loop</h3>
+<p>Python For loop is used for sequential traversal i.e. it is used for iterating over an iterable like String, Tuple, List, Set, or Dictionary.
+
+Note: In Python, for loops only implement the collection-based iteration.
+Here the iterable is a collection of objects like lists, and tuples. The indented statements inside the for loops are executed once for each item in an iterable. The variable var takes the value of the next item of the iterable each time through the loop.</p><br>
+For Loops Syntax</p><code>
+for var in iterable:<br>
+    # statements</code>
+    <p> Python For Loop with List
+This code uses a for loop to iterate over a list of strings, printing each item in the list on a new line. The loop assigns each item to the variable I and continues until all items in the list have been processed.</p>
+      <code><pre># Python program to illustrate
+# Iterating over a list
+l = ["geeks", "for", "geeks"]
+
+for i in l:
+    print(i)</pre></code>
+      <h3>while loop</h3>
+      <p>Python While Loop is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed.</p>
+
+Syntax:
+      <code>while expression:<br>
+    statement(s)</code>
+    <p>While loop falls under the category of indefinite iteration. Indefinite iteration means that the number of times the loop is executed isn’t specified explicitly in advance.
+
+Statements represent all the statements indented by the same number of character spaces after a programming construct are considered to be part of a single block of code. Python uses indentation as its method of grouping statements. When a while loop is executed, expr is first evaluated in a Boolean context and if it is true, the loop body is executed. Then the expr is checked again, if it is still true then the body is executed again and this continues until the expression becomes false.</p>
+      <code><pre># Python program to illustrate
+# while loop
+count = 0
+while (count < 3):
+    count = count + 1
+    print("Hello Geek")</pre></code></section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+
+      <p>Python Functions is a block of statements that return the specific task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.
+
+Some Benefits of Using Functions
+
+Increase Code Readability
+Increase Code Reusability
+Python Function Declaration
+The syntax to declare a function is:
+Types of Functions in Python
+There are mainly two types of functions in Python.
+Built-in library function: These are Standard functions in Python that are available to use.
+User-defined function: We can create our own functions based on our requirements.
+Creating a Function in Python
+We can create a user-defined function in Python, using the def keyword. We can add any type of functionalities and properties to it as we require.
+</p>
+      <code><pre># A simple Python function
+
+def fun():
+  print("Welcome to GFG")</pre></code>
+
+<p>Calling a  Python Function
+After creating a function in Python we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.</p>
+<code><pre># A simple Python function
+def fun():
+    print("Welcome to GFG")
+
+# Driver code to call a function
+fun()</pre></code>
+
+Output:
+Welcome to GFG</section>
+
+    </main>
+  </body>
+</html>
