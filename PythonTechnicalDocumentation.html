@@ -6,13 +6,25 @@
     <title>Technical documentation</title>
     <link rel="stylesheet" href="styles.css"/>
   </head>
+
   <body>
+    <nav id="navbar">
+    <header><h1>Python for Beginners</h1></header><ul>
+    <li><a class="nav-link" href="#Beginner's_guide_to_Python">Beginner's guide to Python</a></li>
+    <li><a  href="#introduction">Introduction to Python</a></li>
+    <li><a  href="#getting_started">Getting started with Python</a></li>
+    <li><a  class="nav-link" href="#Hello_World">Hello World</a></li>
+    <li><a  href="#variables">Variables</a></li>
+    <li><a class="nav-link" href="#data_types">Data Types</a></li>
+    <li><a class="nav-link" href="#control_flow_statements">Control Flow Statements</a>
+    <li><a class="nav-link" href="#Functions">Functions</a></li></ul>
+    </nav>
     <main id="main-doc">
-      <section class="main-section" id="Beginner's guide to Python">
-        <header>Beginner's guide to Python</header>
+      <section class="main-section" id="Beginner's_guide_to_Python">
+        <header><h2>Beginner's guide to Python</h2></header>
 
           <p>New to programming? Python is free and easy to learn if you know where to start! This guide will help you to get started quickly.</p>
-          <h2>Introduction to Python</h2>
+          <h2 id="introduction">Introduction to Python</h2>
 
         <p>Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.<br>
 
@@ -25,7 +37,7 @@ Some of Python's notable features:<br>
 <li>Is easily extended by adding new modules implemented in a compiled language such as C or C++.</li>
 <li>Can also be embedded into an application to provide a programmable interface.</li>
 <li>Is free software in two senses. It doesn't cost anything to download or use Python, or to include it in your application. Python can also be freely modified and re-distributed because while the language is copyrighted it's available under an open-source license.</li></ul></p>
-<h2>Getting started with Python</h2>
+<h2 id="getting_started">Getting started with Python</h2>
 <p>To get started, install the Python 3 interpreter on your computer. This is the program that reads Python programs and carries out their instructions; you need it before you can do any Python programming.
 Mac and Linux distributions may include an outdated version of Python (Python 2), but you should install an updated one (Python 3). See <a href="https://wiki.python.org/moin/BeginnersGuide/Download">BeginnersGuide/Download</a> for instructions to download the correct version of Python.
 
@@ -34,19 +46,18 @@ There are also Python interpreter and IDE bundles available, such as <a href="ht
       </section>
 
       <section class="main-section" id="Hello_World">
-        <header>
-          Hello World</header>
+        <header><h2>Hello World</h2></header>
           <p>To begin, let's do the most popular Hello World tradition:</p>
           <code><pre># Python code for "Hello World"
 # nothing else to type...see how simple is the syntax.
 
 print("Hello World")</pre></code>
 
-        <h2>Variables</h2>
+        <h2 id="variables">Variables</h2>
         <p>In other programming languages like C, C++, and Java, you will need to declare the type of variables but in Python you don’t need to do that. Just type in the variable and when values will be given to it, then it will automatically know whether the value given would be an int, float, or char or even a String.<br>In Python 3, variables are created by assigning a value to a name. For example, x = 5 creates a variable called x and assigns the value 5 to it.</p>
       </section>
-      <section class="main-section" id="Data_Types">
-        <header>Data Types</header>
+      <section class="main-section" id="data_types">
+        <header><h2 id="data_types">Data Types</h2></header>
         <p>Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instances (object) of these classes. The following are the standard or built-in data types in Python:
 <ul>
 <li>Numeric</li>
@@ -60,7 +71,7 @@ print("Hello World")</pre></code>
 <li>Binary Types</li></ul></p>
       </section>
       <section class="main-section" id="Control_Flow_Statements">
-        <header>Control Flow Statements</header>
+        <header><h2 id="control_flow_statements">Control Flow Statements</h2></header>
 
       <p>Decision-making statements in programming languages decide the direction(Control Flow) of the flow of program execution. Types of Control Flow in Python
 In Python programming language, the type of control flow statements is as follows:</p>
@@ -110,7 +121,7 @@ while (count < 3):
     count = count + 1
     print("Hello Geek")</pre></code></section>
       <section class="main-section" id="Functions">
-        <header>Functions</header>
+        <header><h2 id="Functions">Functions</h2></header>
 
       <p>Python Functions is a block of statements that return the specific task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.
 
@@ -120,19 +131,20 @@ Increase Code Readability
 Increase Code Reusability
 Python Function Declaration
 The syntax to declare a function is:
-Types of Functions in Python
-There are mainly two types of functions in Python.
-Built-in library function: These are Standard functions in Python that are available to use.
-User-defined function: We can create our own functions based on our requirements.
-Creating a Function in Python
-We can create a user-defined function in Python, using the def keyword. We can add any type of functionalities and properties to it as we require.
+
 </p>
       <code><pre># A simple Python function
 
 def fun():
   print("Welcome to GFG")</pre></code>
+<p>Types of Functions in Python:<br>
+There are mainly two types of functions in Python.
+Built-in library function: These are Standard functions in Python that are available to use.
+User-defined function: We can create our own functions based on our requirements.</p>
+Creating a Function in Python<br>
+We can create a user-defined function in Python, using the def keyword. We can add any type of functionalities and properties to it as we require.
 
-<p>Calling a  Python Function
+<p>Calling a  Python Function:<br>
 After creating a function in Python we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.</p>
 <code><pre># A simple Python function
 def fun():
