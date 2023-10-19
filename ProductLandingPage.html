@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header id="header">
-      <img href="" id="header-img" />
-      <nav id="nav-bar">
-        <a class="nav-link"></a>
-        <a class="nav-link"></a>
-        <a class="nav-link"></a>
-      </nav>
-      <main>
-        <form id="form">
-          <input id="email" placeholder="Enter your email" type="email"></input>
-          <input id="submit" type="submit" action="https://www.freecodecamp.com/email-submit" ></input>
-        </form>
-      </main>
+<html>
+    <head>
+        <title>iPhone 15</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/344/nvidia.png">
+    </head>
+    <body>
+        <header id="header">
+            <nav id="nav-bar">
+                <div class="logo">
+                </div>
+                <ul>
+                    <li><a class="nav-link" href="#Product">Product</a></li>
+                    <li><a class="nav-link" href="#Architecture">Architecture</a></li>
+                    <li><a class="nav-link" href="#Specs">Specs</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="site-wrapper">
+            <div id="Product" class="product-main-content">
+                <div class="product-text">
+                    <div class="mc-title">
+                        <h1>iPhone 15 Pro </h1>
+                        <img src="https://www.apple.com/v/iphone-15-pro/b/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg"/>
+                    </div>
+                    <div class="mc-subtitle">
+                        <h2>Titanium. So light. So strong. So Pro.</h2>
+                    </div>
+                    <div class="mc-description">
+                        <p>iPhone 15 Pro is the first iPhone to feature an aerospace‑grade titanium design, using the same alloy that spacecraft use for missions to Mars.<br>Titanium has one of the best strength‑to‑weight ratios of any metal, making these our lightest Pro models ever. You’ll notice the difference the moment you pick one up.</p>
+                    </div>
+                    <form id="form" class="email-submit" action="https://www.freecodecamp.com/email-submit">
+                        <h2>STAY TUNED FOR MORE NEWS!</h2>
+                        <input name="email" id="email" class="email-input" type="email" placeholder="Enter your email address" required>
+                        <input id="submit" class="button" type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="product-image">
+                    <img alt="An image of iphone15 Pro in all available" src="https://www.apple.com/v/iphone-15-pro/b/images/specs/hero_iphone_pro_max__bsan8nevcgty_large_2x.jpg">
+                    <figcaption><cite>iPhone 15 Pro Max will be available in four stunning new finishes: black titanium, white titanium, blue titanium, and natural titanium.</cite></figcaption>
+                </div>
+            </div>
 
-    </header>
-
-  </body>
-</html>
+            <div id="Architecture" class="architecture">
+                <div class="architecture-text">
+                    <div class="arc-title">
+                        <h3>Architecture</h3>
+                        <h1>Ahead of its time, ahead of the game.</h1>
+                    </div>
+                    <div class="arc-chars">
+                        <ul>
+                            <li>
+                                <h3>Fast USB ports</h3>
+                                <p>The new USB‑C connector is supercharged with USB 3 speeds — up to 20x faster than USB 2 — and together with new video formats, enables powerful pro workflows that were not possible before.</p>
+                            </li>
+                            <li>
+                                <h3>Titanium Design</h3>
+                                <p>This premium alloy — the same used in spacecraft — has one of the highest strength-to-weight ratios of any metal, making this Apple’s lightest Pro lineup ever. </p>
+                            </li>
+                            <li>
+                                <h3>A17 Pro chip</h3>
+                                <p>The A17 Pro chip, ushers in a new chapter of performance and games never seen before on the iPhone</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
