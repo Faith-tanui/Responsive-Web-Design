@@ -4,139 +4,54 @@
         <title>iPhone 15</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/344/nvidia.png">
     </head>
-    <style>@import url('https://fonts.googleapis.com/css?family=Gugi&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-@media only screen and ( max-width: 650px ) {
-    nav {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 50px;
-
-    }
-    nav > ul {
-        margin-top: 10px;
-        flex-wrap: wrap;
-    }
-    .product-main-content, .architecture {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .product-main-content {
-        padding: 50px;
-        margin-bottom:10px;
-    }
-    .product-text {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .main-content {
-        padding-top: 50px;
-    }
-    .shop-video > iframe {
-        width: 280px;
-        height: 157.5px;
-    }
-    .footer > ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer > p{
-        text-align: center;
-    }
-    .specs-table {
-        width: 20%;
-    }
-    .spec-value {
-        width: 20px;
-    }
-    .spec-char {
-        padding: 5px 5px;
-        height: 5px;
-       }
-}
-
-@media ( min-width: 320px) {
-    .email-submit {
-        width: 250px;
-        margin: 0 auto;
-    }
-}
-
-@media ( min-width: 800px ) {
-    .product-text {
-        width: 70%;
-    }
-    .email-submit {
-        margin: 0;
-        width: 400px;
-    }
-}
-
-* {
+    <style>* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}:root{
+    --background-color-1: #010101;
+    --background-color-2: #ffffff;
+    --background-color-3: #999999;
 }
-
-:root {
-    --background-color-1: #171717;
-    --background-color-2: #F4F8EC;
-    --background-color-3: #292929;
-}
-
-::selection {
-    background-color: #808080;
+body{
+    background-color: var(--background-color-1);
     color: white;
 }
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #0B6623;
+    font-size: 2rem
+
+}
+h3{
+    text-align: center;
+}
 .logo{
-    height: 25px;
+    height: 35px;
     display: flex;
     justify-content: left;
-    margin-left: 0;
-    margin-top: -8px;
-}
+    margin-left: -30px;
+    margin-top: -60px;
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--background-color-1);
-}
 
-img {
-    height: 100%;
+}
+.logo > img {
+    max-width: 100px;
+    max-height: 100px;
     width: 100%;
+    height: 100%;
+    align-items: center
+
 }
 
-a {
-    text-decoration: none;
-    color: #808080;
-}
 
-a:hover {
-    transition: 0.2s;
-    color: #808080;
-}
-
-a:active {
-    color: #A020F0;
-}
-
-/* Here goes all the navbar elements */
 nav {
-    background-color: var(--background-color-1);
-
+    background-color:var(--background-color-3);
     font-family: Gugi;
     font-weight: bold;
-    font-size: 14.5px;
+    font-size: 18px;
     width: 100%;
     padding: 20px 65px;
     position: fixed;
@@ -145,6 +60,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     z-index: 1;
+
 }
 
 nav > ul {
@@ -156,41 +72,43 @@ nav > ul {
 nav ul > li {
     list-style: none;
     margin: 0 10px;
+
 }
 
 nav ul li > a {
-    border-bottom: 2px solid transparent;
-    color: #C2EBE5;
-}
-
-nav ul li > a:hover {
-    border-bottom: 2px solid #5E7B2A;
     color: #ffffff;
+    text-decoration: none;
 }
 
-nav ul li > a:active {
-    border-bottom: 2px solid #3B4E1A;
-    color: #A020F0;
-}
-/* */
-
-.architecture, .quote, .specs, .shop {
-    color: white;
-    text-align: center;
-}
-
-.quote, .specs {
-    background-color: var(--background-color-3);
-}
-
-.logo > img {
-    filter: saturate(500%) contrast(800%) brightness(0%)
-      invert(80%) sepia(50%) hue-rotate(120deg);
-    max-width: 100px;
-    max-height: 100px;
+div >img{
     width: 100%;
-    height: 100%;
+    height: auto;
+    margin: 2rem 0 0;
 }
+
+.product-main-content, .architecture {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .product-main-content {
+        padding: 50px;
+        margin-bottom:10px;
+        margin-top: 50px;
+    }
+    .product-text {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .main-content {
+        padding-top: 50px;
+    }
+    .shop-video > iframe {
+        width: 400px;
+        height: auto;
+    }
 
 .site-wrapper {
     position: relative;
@@ -198,7 +116,6 @@ nav ul li > a:active {
 
 /* Here goes the product main content elements */
 .product-main-content {
-    background: linear-gradient(45deg, #171717 25%, #1c1c1c, #242424, #303030);
     color: white;
     width: 100%;
     padding: 64px 64px 100px;
@@ -225,9 +142,63 @@ nav ul li > a:active {
     margin: 10px 0;
 }
 
-.mc-description {
-    color: #E9E9E9;
-    margin-bottom: 5px;
+
+@media ( min-width: 320px) {
+    .email-submit {
+        width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media ( min-width: 800px ) {
+    .product-text {
+        width: 70%;
+    }
+    .email-submit {
+        margin: 0;
+        width: 400px;
+    }
+}
+/* Here goes all the "Specs" elements */
+.specs {
+    padding: 65px 0;
+}
+
+.table-wrapper {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.specs-table {
+    margin:0 100px 30px;
+}
+.spec-value p{
+    margin-left: 30px
+}
+td {
+    border-top: 1px solid grey;
+
+}
+tr:last-of-type td{
+    border-bottom: 1px solid grey;
+}
+
+
+.spec-container { border-bottom: 1px solid white;
+margin-bottom: 10px }
+
+.architecture p {
+    text-align: center;
+    margin: 10px 100px ;
+}
+
+
+.shop-description > * {
+    margin: 20px 0;
+    text-align: center;
+}
+.shop-video{
+    text-align: center;
 }
 
 .email-submit {
@@ -247,24 +218,28 @@ nav ul li > a:active {
     border-radius: 0;
     padding: 0.5em;
 }
+#form{
+    margin: 20px auto
+}
 
 .email-submit > .button {
     width: 90px;
 }
-
-.button {
+.button{
     font-family: Gugi;
-    background-color: #00;
-    color: black;
-    border: 3px solid #060606;
+    background-color: var(--background-color-3);
+    color:white;
+    border: 3px solid #ffffff;
     text-transform: uppercase;
     font-weight: bold;
     align-self: center;
     height: 45px;
     padding: 0.8em;
     word-wrap: break-word;
+    item-align: center;
+    display: block;
+    margin: 15 auto;
 }
-
 .button:hover {
     cursor: pointer;
     transition: 0.1s;
@@ -276,137 +251,6 @@ nav ul li > a:active {
     background-color: #3F531C;
     color: white;
 }
-
-/* */
-
-/* Here goes all the "Architecture" and quote elements */
-.quote {
-    padding: 60px 0;
-}
-
-.quote blockquote > p {
-    font-size: 32px;
-    margin-bottom: 32px;
-}
-
-.quote blockquote > p::after {
-    content: '" '
-}
-
-.quote blockquote > p::before {
-    content: ' "'
-}
-
-.quote blockquote > figcaption {
-    font-size: 12px;
-}
-
-.architecture {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 75px;
-}
-
-.architecture-image {
-    width: 40vw;
-}
-
-.architecture-image > img {
-    border-radius: 50%;
-}
-
-.arc-title > * {
-    margin: 15px 0;
-}
-
-.arc-chars {
-    margin: 40px 5px;
-    text-align: left;
-}
-
-.arc-chars > ul {
-    list-style-type: none;
-}
-
-.arc-chars ul > li {
-    margin: 15px 0;
-}
-
-.arc-chars ul li > * {
-    margin: 10px 0;
-}
-
-.arc-chars ul li > h3::before {
-    content: "■";
-    margin-right: 5px;
-    color: #5E7B2A;
-}
-
-.arc-chars ul li > p {
-    font-size: 12px;
-}
-
-/* */
-
-/* Here goes all the "Specs" elements */
-.specs {
-    padding: 35px 0;
-}
-
-.table-wrapper {
-    margin: 10px 0;
-    padding: 10px 0;
-}
-
-.table-wrapper > a {
-    margin: 20px 0;
-    display: block;
-    font-weight: bold;
-}
-
-.specs-table {
-    margin: 20px auto;
-}
-
-.spec-container {
-    margin: 5px 0;
-}
-
-.spec-container > .spec-char {
-    text-align: left;
-    font-size: 12px;
-    border-top: 2px solid white;
-    color: white;
-    width: 500px;
-    height: 80px;
-}
-
-.spec-container > .spec-value {
-    text-align: right;
-    border-top: 2px solid #779c36;
-    color: #779c36;
-}
-
-/* */
-
-/*Here goes all the "Shop" elements */
-
-.shop {
-    padding: 40px 0;
-}
-
-.shop-description {
-    padding: 40px 0;
-}
-
-.shop-description > * {
-    margin: 10px 0;
-}
-
-/* */
-
-/* Here goes all the footer elements */
 .footer {
     background-color: var(--background-color-1);
     color: white;
@@ -415,12 +259,12 @@ nav ul li > a:active {
     text-align: right;
 }
 
-
 .footer > ul {
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
     padding-bottom: 10px;
+    align-items: row;
 }
 
 .footer ul > li {
@@ -438,40 +282,7 @@ nav ul li > a:active {
 
 .footer ul li > a:hover {
     color: #818181;
-}
-</style>
-    <body>
-        <header id="header">
-            <nav id="nav-bar">
-                <div class="logo">
-                </div>
-                <ul>
-                    <li><a class="nav-link" href="#Product">Product</a></li>
-                    <li><a class="nav-link" href="#Architecture">Architecture</a></li>
-                    <li><a class="nav-link" href="#Specs">Specs</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="site-wrapper">
-            <div id="Product" class="product-main-content">
-                <div class="product-text">
-                    <div class="mc-title">
-                        <h1>iPhone 15 Pro </h1>
-                        <img src="https://www.apple.com/v/iphone-15-pro/b/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg"/>
-                    </div>
-                    <div class="mc-subtitle">
-                        <h2>Titanium. So light. So strong. So Pro.</h2>
-                    </div>
-                    <div class="mc-description">
-                        <p>iPhone 15 Pro is the first iPhone to feature an aerospace‑grade titanium design, using the same alloy that spacecraft use for missions to Mars.<br>Titanium has one of the best strength‑to‑weight ratios of any metal, making these our lightest Pro models ever. You’ll notice the difference the moment you pick one up.</p>
-                    </div>
-                    <!DOCTYPE html>
-<html>
-    <head>
-        <title>iPhone 15</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+}</style>
     <body>
         <header id="header">
             <nav id="nav-bar">
@@ -493,13 +304,15 @@ nav ul li > a:active {
                         <img src="https://www.apple.com/v/iphone-15-pro/b/images/overview/welcome/hero_endframe__ov6ewwmbhiqq_large_2x.jpg"/>
                     </div>
                     <div class="mc-subtitle">
-                        <h2>Titanium. So light. So strong. So Pro.</h2>
+                        <h2><i>Titanium. So light. So strong. So Pro.</i></h2>
                     </div>
                     <div class="mc-description">
                         <p>iPhone 15 Pro is the first iPhone to feature an aerospace‑grade titanium design, using the same alloy that spacecraft use for missions to Mars.<br>Titanium has one of the best strength‑to‑weight ratios of any metal, making these our lightest Pro models ever. You’ll notice the difference the moment you pick one up.</p>
                     </div>
                     <form id="form" class="email-submit" action="https://www.freecodecamp.com/email-submit">
+                    <br>
                         <h2>STAY TUNED FOR MORE NEWS!</h2>
+                        <br>
                         <input name="email" id="email" class="email-input" type="email" placeholder="Enter your email address" required>
                         <input id="submit" class="button" type="submit" value="Submit">
                     </form>
@@ -513,18 +326,20 @@ nav ul li > a:active {
             <div id="Architecture" class="architecture">
                 <div class="architecture-text">
                     <div class="arc-title">
-                        <h3>Architecture</h3>
-                        <h1>Ahead of its time, ahead of the game.</h1>
+                        <h2>Architecture</h2>
+                        <p><i>Ahead of its time, ahead of the game.</i></p>
+                        <br>
                     </div>
                     <div class="arc-chars">
                         <ul>
                             <li>
                                 <h3>Fast USB ports</h3>
-                                <p>The new USB‑C connector is supercharged with USB 3 speeds — up to 20x faster than USB 2 — and together with new video formats, enables powerful pro workflows that were not possible before.</p>
+                                <p>The new USB‑C connector is supercharged with USB 3 speeds — up to 20x faster than USB 2 — and together with new video formats, enables powerful pro workflows that were not possible before.</p><br>
                             </li>
                             <li>
                                 <h3>Titanium Design</h3>
                                 <p>This premium alloy — the same used in spacecraft — has one of the highest strength-to-weight ratios of any metal, making this Apple’s lightest Pro lineup ever. </p>
+                                <br>
                             </li>
                             <li>
                                 <h3>A17 Pro chip</h3>
@@ -535,9 +350,8 @@ nav ul li > a:active {
                 </div>
             </div>
 
-            </div>
             <div id="Specs" class="specs">
-                <h1>Specs</h1>
+                <h2>Specs</h2>
                 <div class="table-wrapper">
                     <table class="specs-table">
                         <tbody>
@@ -546,10 +360,10 @@ nav ul li > a:active {
                                     Chip
                                 </td>
                                 <td class="spec-value">
-                                    <h3>A17 Pro chip
+                                    <p>A17 Pro chip
 New 6‑core CPU with 2 performance and 4 efficiency cores<br>
 New 6‑core GPU<br>
-New 16‑core Neural Engine</h3>
+New 16‑core Neural Engine</p><br>
                                 </td>
                             </tr>
                             <tr class="spec-container">
@@ -557,9 +371,10 @@ New 16‑core Neural Engine</h3>
                                     Video Recording
                                 </td>
                                 <td class="spec-value">
-                                    <h3>4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps
+                                    <p>4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps
 1080p HD video recording at 25 fps, 30 fps, or 60 fps
-720p HD video recording at 30 fps</h3>
+720p HD video recording at 30 fps</p>
+<br>
                                 </td>
                             </tr>
                             <tr class="spec-container">
@@ -568,7 +383,7 @@ New 16‑core Neural Engine</h3>
 
                                 </td>
                                 <td class="spec-value">
-                                    <h3>Enabled by TrueDepth camera for facial recognition</h3>
+                                    <p>Enabled by TrueDepth camera for facial recognition</p><br>
                                 </td>
                             </tr>
                             <tr class="spec-container">
@@ -576,10 +391,10 @@ New 16‑core Neural Engine</h3>
                                     Safety
                                 </td>
                                 <td class="spec-value">
-                                    <h3>
-Emergency SOS via satellite8
-Crash Detection9
-Roadside Assistance via satellite8</h3>
+                                    <p>
+Emergency SOS via satellite<br>
+Crash Detection<br>
+Roadside Assistance via satellite<br></p>
                                 </td>
                             </tr>
                         </tbody>
@@ -590,8 +405,8 @@ Roadside Assistance via satellite8</h3>
             <div id="Shop" class="shop">
                 <h2>Shop</h2>
                 <div class="shop-description">
-                    <h1>iPhone15 and iPhone15 pro</h1>
-                    <h2>Starting at $999.00</h2>
+                    <h3>iPhone15 pro</h3>
+                    <p>Starting from $1099.00</p>
                     <input id="purchase" class="button" type="submit" value="See all buying options">
                 </div>
                 <div class="shop-video">
