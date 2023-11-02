@@ -7,6 +7,93 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Faith's Portfolio</title>
     </head>
+  <style>body{
+background-color:#f3e8de;
+margin: 0;
+}
+.navbar{
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: #f8f6f0;
+  top: 0;
+  left:0;
+
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: 60%;
+  margin-right: 25px;
+
+  overflow:hidden;
+  flex-wrap: wrap;
+}
+li a {
+  color:#002300;
+  align-items: center;
+  text-decoration: none;
+}
+.about-me{
+  background-color: #f8f6f0;
+  height: 100vh;
+  padding:none;
+}
+
+.photo img {
+display: block;
+border-radius: 50%;
+padding: 60px;
+margin: 0 auto;
+}
+.text {
+  display: block;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.projects{
+  display: block;
+  margin: 0 auto;
+}
+
+.project-tile{
+  float: left;
+  width: 200px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  padding: 5px;
+}
+.project-tile:hover{
+  border: 1px solid #777;
+}
+div.project-tile img{
+  width: 100%;
+  height: auto;
+}
+div.desc{
+  padding: 15px;
+  text-align: center;
+}
+.projects::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+@media only screen and (max-width: 700px){
+  .projects{
+    width: 49.99999%;
+  }
+@media only screen and (max-width: 500px){
+  .projects{
+    width: 100%
+  }
+}
+.contact-means{
+  display: flex;
+}</style>
   <body>
       <nav class="navbar" id="navbar">
         <ul>
@@ -31,19 +118,19 @@
       <div class="projects">
         <div class="project-tile">
           <a target="_blank" href ="https://github.com/Faith-tanui/Responsive-Web-Design/blob/main/MandelaTribute.html">
-          <img src "" height= "200" /></a>
+          <img src="PortfolioProject/Images/Nelson Mandela.jpeg" height= "200" /></a>
           <div class="desc">Tribute to Nelson Mandela</div>
       </div>
 
         <div class="project-tile">
           <a target="_blank" href="https://github.com/Faith-tanui/Responsive-Web-Design/blob/main/ProductLandingPage.html">
-          <img id="project-img" src="" height ="200" ></a>
+          <img id="project-img" src="PortfolioProject/Images/iphone15pro.jpeg" height ="200" ></a>
           <div class="desc">Product Landing Page</div>
 
       </div>
         <div class="project-tile">
           <a target="_blank" href="https://github.com/Faith-tanui/Responsive-Web-Design/blob/main/CitySkyLine.html">
-          <img id="project-img" src="" height ="200" ></a>
+          <img id="project-img" src="PortfolioProject/Images/Skyline.png" height ="200" ></a>
           <div class="desc">City SkyLine</div>
 
           </div>
