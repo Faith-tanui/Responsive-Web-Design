@@ -1,7 +1,53 @@
-
+body{
+    background-color: rgb(15, 15, 34);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+}
+form{
+    width: 60vw;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
 h1, p{
     text-align: center;
 }
-.personal-info{
-    width: 100%
+fieldset{
+    border: none;
+    padding: 2rem 0;
+}
+input, select{
+    height: 20px;
+}
+input, textarea, select{
+    margin-top: 10px;
+    
+}
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+input, textarea {
+    background-color: #040420;
+    border: 1px solid #0c0c20;
+    color: #ffffff;
+  }
+.inline{
+    display: inline;
+    width: 100%;
+   
+}
+input[type=radio], input[type=checkbox]{
+    vertical-align: middle;
+    position: relative;
+    bottom: 0.5rem; 
+    margin-right: 5px;
+    
+}
+button{
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    color:#040420;
 }
